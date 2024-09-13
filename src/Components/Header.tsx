@@ -18,7 +18,7 @@ const navlinks = (col: Boolean, clicked: any) => {
         onClick={handleClick}
         className={`${
           col ? "flex flex-col items-center" : ""
-        } text-textColor text-lg font-mono hover:text-primaryColor p-2 `}
+        } text-textColor text-lg font-mono hover:text-primaryColor p-4 `}
         href={`#${link}`}
       >
         <span className="text-primaryColor">0{index + 1}. </span>
