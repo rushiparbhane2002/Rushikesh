@@ -3,7 +3,6 @@ import { Drawer, Button, Burger } from "@mantine/core";
 import { IconHexagonLetterR, IconX } from "@tabler/icons-react";
 import { navlinks } from "./Header";
 
-
 const SideBar = () => {
   const [opened, { toggle }] = useDisclosure(false);
 
@@ -21,8 +20,8 @@ const SideBar = () => {
           style={{ backgroundOpacity: 0.5, blur: 4 }}
         />
         <Drawer.Content className="!-z-0" bg="#0A192F">
-          <Drawer.Body className="mt-20 flex flex-col gap-5" bg="#0A192F">
-            {navlinks(true,toggle)}
+          <Drawer.Body className="mt-28 flex flex-col gap-5" bg="#0A192F">
+            {navlinks(true, toggle)}
           </Drawer.Body>
         </Drawer.Content>
       </Drawer.Root>

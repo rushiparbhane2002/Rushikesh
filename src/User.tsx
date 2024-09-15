@@ -14,7 +14,7 @@ const ProjectInfo = [
   {
     title: "Preksha Cloud - School and College ERP",
     desc: "Preksha Cloud is a complete and feature-rich school/college/institution management software for all educational organizations. This software supports learning, administration, and management activities in schools, colleges, universities, tuition centres, or training centres. It manages everything from admissions to attendance, exams to result cards, and online video lectures to multimedia transfer.",
-    image: "/Prekshaimg.png",
+    image: "/PrekshaImg.png",
     live: true,
     technologies: [
       "C#",

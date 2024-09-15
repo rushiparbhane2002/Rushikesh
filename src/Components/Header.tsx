@@ -18,7 +18,7 @@ const navlinks = (col: Boolean, clicked: any) => {
         onClick={handleClick}
         className={`${
           col ? "flex flex-col items-center" : ""
-        } text-textColor text-lg font-mono hover:text-primaryColor p-4 `}
+        } text-textColor text-lg font-mono hover:text-primaryColor  `}
         href={`#${link}`}
       >
         <span className="text-primaryColor">0{index + 1}. </span>
@@ -51,7 +51,7 @@ const Header = () => {
     <nav
       className={`flex ${show ? "translate-y-0" : "translate-y-28"} ${
         shadow ? "shadow-[0px_10px_30px_-10px_#020c1b]" : ""
-      } transition-transform duration-500 ease-in-out fixed w-full z-10 h-[18vh] bg-bgColor px-10 text-textColor hover:text-primaryColor justify-between items-center ${
+      } transition-transform duration-500 ease-in-out fixed w-full z-10 h-[15vh] bg-bgColor px-10 text-textColor hover:text-primaryColor justify-between items-center ${
         show ? "" : "hidden"
       }`}
     >

@@ -24,7 +24,7 @@ const About = () => {
         data-aos="zoom-out-up"
         data-aos-duration="800"
         className="mt-24 relative flex bs-mx:!overflow-visible sm-mx:px-4 xs-mx:py-4 bs-mx:items-center bs-mx-gap-6 md-mx:px-6 flex-col-reverse lg:flex-row items-center justify-around overflow-hidden font-mono px-5 py-5 h-fit"
-        id="About" // Ensure the id matches the link href
+        id="About"
       >
         <Particles
           className="absolute -z-20 inset-0"
@@ -36,13 +36,14 @@ const About = () => {
           refresh
         />
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:ml-28 lg:w-3/4 gap-1 lg:gap-2">
-          <div className="text-primaryColor text-3xl lg:text-2xl sm-mx:mt-6 sm-mx:text-xl">
+          {/* Reduced Text Size */}
+          <div className="text-primaryColor text-lg lg:text-base sm-mx:mt-6 sm-mx:text-sm">
             Hi, I am
           </div>
-          <div className="text-white text-[2.5rem] lg:text-[3.85rem] font-extrabold sm-mx:text-4xl">
+          <div className="text-white text-[1.75rem] lg:text-[2.5rem] font-extrabold sm-mx:text-2xl">
             {Info.name}
           </div>
-          <div className="text-white text-2xl lg:text-4xl flex font-semibold sm-mx:text-2xl">
+          <div className="text-white text-lg lg:text-2xl flex font-semibold sm-mx:text-md">
             I'm a&nbsp;
             <span className="text-primaryColor">
               <Typewriter
@@ -50,7 +51,7 @@ const About = () => {
               />
             </span>
           </div>
-          <div className="text-textColor mt-2 mb-4 my-2 lg:my-8 text-justify w-[90%] text-base lg:text-xl font-semibold">
+          <div className="text-textColor mt-2 mb-4 my-2 lg:my-8 text-justify w-[90%] text-xs lg:text-sm font-semibold">
             {Info.bio}
           </div>
           <div className="flex gap-3 mt-4">
@@ -78,14 +79,14 @@ const About = () => {
           </div>
         </div>
         <div
-          className="flex justify-center lg:justify-end items-center w-[350px] h-[350px] lg:w-[390px] lg:h-[320px] rounded-full lg:mr-32"
+          className="flex justify-center  lg:justify-end items-center w-[200px] h-[200px] lg:w-[350px] lg:h-[250px] rounded-full lg:mr-32 lg:mt-2"
           id="photo"
         >
-          <NeonGradientCard className="w-full h-full flex items-center justify-center text-center">
+          <NeonGradientCard className="w-full h-full flex items-center justify-center text-center rounded-full">
             <img
               src="profile.png"
               alt="Profile"
-              className="w-full h-full rounded-full"
+              className="w-full h-full object-cover rounded-full"
             />
           </NeonGradientCard>
         </div>

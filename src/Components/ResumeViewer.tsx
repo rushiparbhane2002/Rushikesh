@@ -64,7 +64,7 @@ const ResumeViewer = (props: any) => {
         </Modal.Header>
         <Modal.Body className="!bg-bgColor !pt-2 !border-primaryColor border-2 !border-t-0 !rounded-bl-3xl !rounded-br-3xl">
           <Document
-            file="RushikeshResume.pdf"
+            file="/RushikeshResume.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
           >
             <Page
